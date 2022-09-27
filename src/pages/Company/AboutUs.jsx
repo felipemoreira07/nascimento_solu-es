@@ -1,4 +1,4 @@
-import { Box, Divider, Img, Text } from "@chakra-ui/react";
+import { Box, Img, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 import { Header } from "../../components/Header/Header";
@@ -99,7 +99,7 @@ export const AboutUs = () => {
         }}
         className="reveal"
         bgColor="white"
-        height="680px"
+        height="678px"
         display="flex"
         flexDirection="row"
       >
@@ -151,6 +151,7 @@ export const AboutUs = () => {
           },
         }}
         className="reveal"
+        paddingTop="6rem"
         display="flex"
         flexDirection="row"
         gap="6rem"
@@ -173,10 +174,15 @@ export const AboutUs = () => {
           sx={{
             "@media (max-width: 876px)": {
               width: "100%",
+              height: "450px",
+            },
+            "@media (max-width: 450px)": {
+              width: "100%",
+              height: "800px",
             },
           }}
           w="50%"
-          h="600px"
+          h="700px"
           display="flex"
           alignContent="center"
           flexDirection="column"
@@ -210,13 +216,11 @@ export const AboutUs = () => {
             {leftInfo3.description}
           </Text>
 
-          <Divider />
-
           <Text
             color="black"
             fontFamily="Public Sans"
             fontSize="xl"
-            padding="2rem 0 1rem 0"
+            padding="0 0 1rem 0"
           >
             {leftInfo3.text}
           </Text>
@@ -233,8 +237,8 @@ export const AboutUs = () => {
       >
         <Box
           sx={{
-            "@media (max-width: 400px)": {
-              h: "550px",
+            "@media (max-width: 500px)": {
+              h: "540px",
               padding: "2rem",
             },
           }}
@@ -286,7 +290,7 @@ export const AboutUs = () => {
             h: "600px",
           },
           "@media (max-width: 400px)": {
-            h: "1000px",
+            h: "900px",
             padding: "0 0 300px 0",
           },
         }}
@@ -302,6 +306,9 @@ export const AboutUs = () => {
           sx={{
             "@media (max-width: 900px)": {
               padding: "100px 0 120px 0",
+            },
+            "@media (max-width: 500px)": {
+              padding: "50px 0 120px 0",
             },
           }}
           fontSize="40px"
