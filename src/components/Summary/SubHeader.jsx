@@ -3,6 +3,14 @@ import { Box, Text, Link } from "@chakra-ui/react";
 export const SubHeader = () => {
   return (
     <Box
+      sx={{
+        "@media (max-width: 630px)": {
+          height: "70px",
+        },
+        "@media (max-width: 336px)": {
+          height: "90px",
+        },
+      }}
       marginTop="100px"
       w="100%"
       h="50px"

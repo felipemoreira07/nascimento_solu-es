@@ -1,34 +1,50 @@
 import { Box, Text } from "@chakra-ui/react";
 
-export const Left = ({ showLogo, showButton, title, text }) => {
+export const Info = ({
+  sx,
+  logo,
+  color,
+  showLogo,
+  showButton,
+  title,
+  text,
+}) => {
   return (
     <Box
+      sx={sx}
       w="50%"
       h="600px"
       display="flex"
-      justifyContent="center"
+      alignContent="center"
       flexDirection="column"
       padding="4rem"
     >
       {showLogo && (
         <Text
-          color="green.800"
+          color={color}
           fontFamily="Raleway"
           fontWeight="bold"
+          fontSize="calc(12px + 0.390625vw)"
           padding="0 0 1rem 0"
         >
-          VITIM TECHNOLOGIES
+          {logo}
         </Text>
       )}
       <Text
+        color={color}
         fontFamily="Cormorant Garamond"
-        fontSize="50px"
+        fontSize="calc(37px + 0.390625vw)"
         fontWeight="bold"
         padding="0 0 1rem 0"
       >
         {title}
       </Text>
-      <Text fontFamily="Public Sans" fontSize="xl" padding="0 0 1rem 0">
+      <Text
+        color={color}
+        fontFamily="Public Sans"
+        fontSize="calc(17px + 0.390625vw)"
+        padding="0 0 1rem 0"
+      >
         {text}
       </Text>
       {showButton && (
@@ -40,6 +56,7 @@ export const Left = ({ showLogo, showButton, title, text }) => {
           color="white"
           fontFamily="Raleway"
           fontWeight="bold"
+          fontSize="calc(12px + 0.390625vw)"
           _hover={{
             bg: "green.400",
           }}

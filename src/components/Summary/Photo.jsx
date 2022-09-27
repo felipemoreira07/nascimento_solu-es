@@ -1,6 +1,7 @@
 import { Box, Image } from "@chakra-ui/react";
 
 export const Photo = ({
+  sx,
   imgUrl,
   margin,
   width,
@@ -10,7 +11,7 @@ export const Photo = ({
   borderRadius,
 }) => {
   return (
-    <Box width={width} height={height}>
+    <Box sx={sx} width={width} height={height}>
       <Image
         borderRadius={borderRadius}
         src={imgUrl}

@@ -1,5 +1,6 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import { Nav } from "./Nav";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
@@ -14,10 +15,19 @@ export const Header = () => {
       alignItems="center"
       position="fixed"
       top="0"
+      zIndex="2"
     >
-      <Text fontFamily="Raleway" fontSize="2xl" fontWeight="bold" ml="60px">
+      <Link
+        to="/"
+        style={{
+          fontWeight: "bold",
+          fontFamily: "Raleway",
+          marginLeft: "60px",
+          fontSize: "calc(17px + 0.390625vw)",
+        }}
+      >
         VITIM
-      </Text>
+      </Link>
       <Nav />
     </Box>
   );
