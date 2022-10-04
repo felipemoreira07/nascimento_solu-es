@@ -11,7 +11,7 @@ export const Summary = () => {
   };
 
   return (
-    <Box marginTop="100px">
+    <Box marginTop="6rem">
       <SubHeader />
       <Box
         display="flex"
@@ -26,12 +26,12 @@ export const Summary = () => {
           sx={{
             "@media (max-width: 800px)": {
               width: "100%",
-              height: "500px",
+              height: "31.25rem",
               padding: "3rem 4rem 0 4rem",
             },
             "@media (max-width: 460px)": {
               width: "100%",
-              height: "620px",
+              height: "38.75rem",
               padding: "3rem 4rem 0rem 4rem",
             },
           }}
@@ -53,8 +53,8 @@ export const Summary = () => {
           }}
           margin="2rem 0 0 0"
           width="50%"
-          height="600px"
-          borderRadius="10px"
+          height="37.5rem"
+          borderRadius="0.625rem"
           boxSize="90%"
           alt="software engineer working"
           imgUrl="https://www.certasolucoes.com/wp-content/uploads/2020/11/gr7-tecnologia-suporte-tecnico-TI-manaus-cftv-manaus-cameras-de-seguranca-manaus-sistema-para-motel-manaus-infraestrutura-de-redes-manaus-768x605.png"

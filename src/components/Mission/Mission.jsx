@@ -8,12 +8,12 @@ export const Mission = () => {
           flexDirection: "column",
         },
         "@media (max-width: 500px)": {
-          height: "530px",
+          height: "32.5rem",
         },
       }}
       className="reveal"
       width="100%"
-      height="430px"
+      height="26.5rem"
       display="flex"
       alignItems="center"
       flexDirection="row"
@@ -35,14 +35,14 @@ export const Mission = () => {
           color="green.800"
           fontFamily="Raleway"
           fontWeight="bold"
-          fontSize="calc(12px + 0.390625vw)"
+          fontSize="calc(0.75rem + 0.390625vw)"
           padding="0 0 1rem 0"
         >
           MISSION
         </Text>
         <Text
           fontFamily="Cormorant Garamond"
-          fontSize="calc(47px + 0.390625vw)"
+          fontSize="calc(3rem + 0.390625vw)"
           fontWeight="bold"
         >
           No task left behind.
@@ -64,7 +64,7 @@ export const Mission = () => {
           }}
           padding="0 3rem 1.5rem 0"
           fontFamily="Public Sans"
-          fontSize="calc(12px + 0.390625vw)"
+          fontSize="calc(0.75rem + 0.390625vw)"
         >
           We believe patients should not be forced to choose between staying
           healthy and putting food on the table. Atlas Health's mission is to
@@ -80,7 +80,7 @@ export const Mission = () => {
           }}
           padding="0 3rem 1rem 0"
           fontFamily="Public Sans"
-          fontSize="calc(12px + 0.390625vw)"
+          fontSize="calc(0.75rem + 0.390625vw)"
         >
           The financial reality of healthcare is challenging. Your hospital or
           health system deserves a patient assistance and health equity solution

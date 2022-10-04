@@ -7,7 +7,7 @@ export const Header = () => {
     <Box
       bg="blue.800"
       w="100%"
-      h="100px"
+      h="6rem"
       p={4}
       color="white"
       display="flex"
@@ -22,8 +22,8 @@ export const Header = () => {
         style={{
           fontWeight: "bold",
           fontFamily: "Raleway",
-          marginLeft: "60px",
-          fontSize: "calc(17px + 0.390625vw)",
+          marginLeft: "4rem",
+          fontSize: "calc(1rem + 0.390625vw)",
         }}
       >
         VITIM

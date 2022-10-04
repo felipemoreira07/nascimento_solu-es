@@ -5,18 +5,18 @@ export const SubHeader = () => {
     <Box
       sx={{
         "@media (max-width: 630px)": {
-          height: "70px",
+          height: "4.3rem",
         },
         "@media (max-width: 336px)": {
-          height: "90px",
+          height: "5.5rem",
         },
       }}
-      marginTop="100px"
+      marginTop="6rem"
       w="100%"
-      h="50px"
+      h="3.125rem"
       bg="green.200"
       textAlign="center"
-      p="10px 0"
+      p="0.625rem 0"
     >
       <Text fontFamily="Public Sans">
         <Text as="b">Explore</Text>: High client ratings in{" "}

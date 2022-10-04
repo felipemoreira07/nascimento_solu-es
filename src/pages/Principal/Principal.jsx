@@ -25,6 +25,123 @@ export const Principal = () => {
 
   window.addEventListener("scroll", reveal);
 
+  const navOptions = [
+    {
+      id: "1",
+      name: "Home",
+      url: "/",
+    },
+    {
+      id: "2",
+      name: "Solution",
+      url: "/",
+    },
+    {
+      id: "3",
+      name: "Impact",
+      url: "/",
+    },
+    {
+      id: "4",
+      name: "Resources",
+      url: "/",
+    },
+  ];
+
+  const firstSubNavOptions = [
+    {
+      id: "1",
+      name: "KLS Reports",
+      url: "/",
+    },
+    {
+      id: "2",
+      name: "Case Studies",
+      url: "/",
+    },
+    {
+      id: "3",
+      name: "Patient Stories",
+      url: "/",
+    },
+    {
+      id: "4",
+      name: "Blog",
+      url: "/",
+    },
+    {
+      id: "5",
+      name: "White Papers",
+      url: "/",
+    },
+    {
+      id: "6",
+      name: "Webinars",
+      url: "/",
+    },
+    {
+      id: "7",
+      name: "Events",
+      url: "/",
+    },
+  ];
+
+  const secondSubNavOptions = [
+    {
+      id: "1",
+      name: "About Us",
+      url: "/",
+    },
+    {
+      id: "2",
+      name: "Leadership",
+      url: "/",
+    },
+    {
+      id: "3",
+      name: "Careers",
+      url: "/",
+    },
+    {
+      id: "4",
+      name: "Security",
+      url: "/",
+    },
+    {
+      id: "5",
+      name: "Press",
+      url: "/",
+    },
+    {
+      id: "6",
+      name: "News",
+      url: "/",
+    },
+  ];
+
+  const thirdSubNavOptions = [
+    {
+      id: "1",
+      name: "Contact Us",
+      url: "/",
+    },
+    {
+      id: "2",
+      name: "ROI Assessment",
+      url: "/",
+    },
+    {
+      id: "3",
+      name: "Demo",
+      url: "/",
+    },
+    {
+      id: "4",
+      name: "Privacy",
+      url: "/",
+    },
+  ];
+
   return (
     <>
       <Header />
@@ -36,14 +153,14 @@ export const Principal = () => {
         sx={{
           "@media (max-width: 760px)": {
             flexDirection: "column",
-            height: "900px",
+            height: "56.25rem",
           },
           "@media (max-width: 635px)": {
             flexDirection: "column",
-            height: "1400px",
+            height: "87.5rem",
           },
         }}
-        h="620px"
+        h="38.75rem"
         w="100%"
         bgColor="green.800"
         display="flex"
@@ -53,29 +170,29 @@ export const Principal = () => {
           sx={{
             "@media (max-width: 760px)": {
               order: "2",
-              padding: "0 0 0 60px",
+              padding: "0 0 0 3.75rem",
             },
             "@media (max-width: 635px)": {
               order: "2",
-              padding: "120px 0 0 60px",
-              width: "250px",
+              padding: "7.5rem 0 0 3.75rem",
+              width: "15.625rem",
             },
           }}
-          height="200px"
-          w="400px"
+          height="12.5rem"
+          w="25rem"
           display="flex"
           flexDirection="column"
-          padding="80px 0 0 60px"
+          padding="5rem 0 0 3.75rem"
           color="white"
-          gap="15px"
+          gap="1rem"
         >
           <Link
             to="/"
             style={{
-              width: "150px",
+              width: "10rem",
               fontWeight: "bold",
               fontFamily: "Raleway",
-              fontSize: "calc(45px + 0.390625vw)",
+              fontSize: "calc(2.75rem + 0.390625vw)",
             }}
           >
             VITIM
@@ -83,19 +200,19 @@ export const Principal = () => {
 
           <Text
             fontFamily="Raleway"
-            fontSize="calc(17px + 0.390625vw)"
+            fontSize="calc(1rem + 0.390625vw)"
             fontWeight="bold"
           >
             Follow us
           </Text>
 
-          <Box w="40px" h="40px">
+          <Box w="2.5rem" h="2.5rem">
             <a href="https://www.linkedin.com/in/dev-victor-nascimento/">
               <Img src="https://assets.website-files.com/61adf2412244af0f9852032f/61b9f96f6bd2246f6f57aba6_LinkedIn_Logo-p-500.png" />
             </a>
           </Box>
 
-          <Box marginTop="10px">
+          <Box marginTop="0.75rem">
             <Text fontWeight="bold" fontFamily="Raleway">
               ©2022 Atlas Labs, Inc.
             </Text>
@@ -109,206 +226,113 @@ export const Principal = () => {
           sx={{
             "@media (max-width: 760px)": {
               order: "1",
-              marginLeft: "60px",
-              height: "600px",
-              width: "320px",
+              marginLeft: "3.75rem",
+              height: "37.5rem",
+              width: "18.75rem",
             },
             "@media (max-width: 635px)": {
               order: "1",
-              marginLeft: "60px",
-              height: "1000px",
+              marginLeft: "3.75rem",
+              height: "62.5rem",
               display: "flex",
               flexDirection: "column",
-              gap: "25px",
-              width: "280px",
+              gap: "1.5rem",
+              widht: "16.25rem",
             },
           }}
-          paddingTop="80px"
-          marginLeft="100px"
-          w="100%"
+          paddingTop="5rem"
+          marginLeft="6rem"
           h="100%"
+          w="100%"
           display="grid"
           gridTemplateColumns="repeat(3, 1fr)"
         >
-          <Box w="50%" display="flex" flexDirection="column" gap="15px">
-            <Link
-              to="/"
-              style={{
-                color: "white",
-                fontFamily: "Raleway",
-                fontSize: "calc(17px + 0.390625vw)",
-                fontWeight: "bold",
-              }}
-            >
-              Home
-            </Link>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-              fontWeight="bold"
-            >
-              Solution
-            </Text>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-              fontWeight="bold"
-            >
-              Impact
-            </Text>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-              fontWeight="bold"
-            >
-              Resources
-            </Text>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-            >
-              KLS Reports
-            </Text>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-            >
-              Case Studies
-            </Text>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-            >
-              Patient Stories
-            </Text>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-            >
-              Blog
-            </Text>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-            >
-              White Papers
-            </Text>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-            >
-              Webinars
-            </Text>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-            >
-              Events
-            </Text>
+          <Box display="flex" flexDirection="column" gap="1rem">
+            {navOptions.map((navOption) => {
+              return (
+                <Link
+                  key={navOption.id}
+                  to={navOption.url}
+                  style={{
+                    color: "white",
+                    fontFamily: "Raleway",
+                    fontSize: "calc(1rem + 0.390625vw)",
+                    fontWeight: "bold",
+                  }}
+                >
+                  {navOption.name}
+                </Link>
+              );
+            })}
+            {firstSubNavOptions.map((navOption) => {
+              return (
+                <Link
+                  key={navOption.id}
+                  to={navOption.url}
+                  style={{
+                    color: "white",
+                    fontFamily: "Raleway",
+                    fontSize: "calc(1rem + 0.390625vw)",
+                  }}
+                >
+                  {navOption.name}
+                </Link>
+              );
+            })}
           </Box>
-          <Box display="flex" flexDirection="column" gap="15px">
+          <Box display="flex" flexDirection="column" gap="1rem">
             <Link
               to="/about-us"
               style={{
                 color: "white",
                 fontFamily: "Raleway",
-                fontSize: "calc(17px + 0.390625vw)",
+                fontSize: "calc(1rem + 0.390625vw)",
                 fontWeight: "bold",
               }}
             >
               Company
             </Link>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-            >
-              About Us
-            </Text>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-            >
-              Leadership Team
-            </Text>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-            >
-              Careers
-            </Text>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-            >
-              Security
-            </Text>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-            >
-              Press
-            </Text>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-            >
-              News
-            </Text>
+            {secondSubNavOptions.map((navOption) => {
+              return (
+                <Link
+                  key={navOption.id}
+                  to={navOption.url}
+                  style={{
+                    color: "white",
+                    fontFamily: "Raleway",
+                    fontSize: "calc(1rem + 0.390625vw)",
+                  }}
+                >
+                  {navOption.name}
+                </Link>
+              );
+            })}
           </Box>
 
-          <Box display="flex" flexDirection="column" gap="15px">
+          <Box display="flex" flexDirection="column" gap="1rem">
             <Text
               color="white"
               fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
+              fontSize="calc(1rem + 0.390625vw)"
               fontWeight="bold"
             >
               Contact
             </Text>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-            >
-              Contact Us
-            </Text>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-            >
-              ROI Assessment
-            </Text>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-            >
-              Demo
-            </Text>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-            >
-              Privacy
-            </Text>
+            {thirdSubNavOptions.map((navOption) => {
+              return (
+                <Link
+                  key={navOption.id}
+                  to={navOption.url}
+                  style={{
+                    color: "white",
+                    fontFamily: "Raleway",
+                    fontSize: "calc(1rem + 0.390625vw)",
+                  }}
+                >
+                  {navOption.name}
+                </Link>
+              );
+            })}
           </Box>
         </Box>
       </Box>

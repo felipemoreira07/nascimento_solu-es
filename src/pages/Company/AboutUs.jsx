@@ -45,6 +45,123 @@ export const AboutUs = () => {
     text: "We understand the unique challenges faced when enrolling patients and dealing with coverage gaps. Working on behalf of hospitals and health systems across the country, we configure and implement medical financial aid systems that deliver for years to come.",
   };
 
+  const navOptions = [
+    {
+      id: "1",
+      name: "Home",
+      url: "/",
+    },
+    {
+      id: "2",
+      name: "Solution",
+      url: "/",
+    },
+    {
+      id: "3",
+      name: "Impact",
+      url: "/",
+    },
+    {
+      id: "4",
+      name: "Resources",
+      url: "/",
+    },
+  ];
+
+  const firstSubNavOptions = [
+    {
+      id: "1",
+      name: "KLS Reports",
+      url: "/",
+    },
+    {
+      id: "2",
+      name: "Case Studies",
+      url: "/",
+    },
+    {
+      id: "3",
+      name: "Patient Stories",
+      url: "/",
+    },
+    {
+      id: "4",
+      name: "Blog",
+      url: "/",
+    },
+    {
+      id: "5",
+      name: "White Papers",
+      url: "/",
+    },
+    {
+      id: "6",
+      name: "Webinars",
+      url: "/",
+    },
+    {
+      id: "7",
+      name: "Events",
+      url: "/",
+    },
+  ];
+
+  const secondSubNavOptions = [
+    {
+      id: "1",
+      name: "About Us",
+      url: "/",
+    },
+    {
+      id: "2",
+      name: "Leadership",
+      url: "/",
+    },
+    {
+      id: "3",
+      name: "Careers",
+      url: "/",
+    },
+    {
+      id: "4",
+      name: "Security",
+      url: "/",
+    },
+    {
+      id: "5",
+      name: "Press",
+      url: "/",
+    },
+    {
+      id: "6",
+      name: "News",
+      url: "/",
+    },
+  ];
+
+  const thirdSubNavOptions = [
+    {
+      id: "1",
+      name: "Contact Us",
+      url: "/",
+    },
+    {
+      id: "2",
+      name: "ROI Assessment",
+      url: "/",
+    },
+    {
+      id: "3",
+      name: "Demo",
+      url: "/",
+    },
+    {
+      id: "4",
+      name: "Privacy",
+      url: "/",
+    },
+  ];
+
   return (
     <>
       <Header />
@@ -54,13 +171,13 @@ export const AboutUs = () => {
         sx={{
           "@media (max-width: 800px)": {
             flexDirection: "column",
-            height: "750px",
+            height: "46.25rem",
           },
         }}
         display="flex"
         flexDirection="row"
         bgColor="white"
-        height="500px"
+        height="31.25rem"
       >
         <Photo
           sx={{
@@ -72,7 +189,7 @@ export const AboutUs = () => {
           alt="man programming"
           width="50%"
           margin="3rem 0 0 2rem"
-          borderRadius="10px"
+          borderRadius="0.75rem"
           imgUrl="https://media.cdn.teamtailor.com/images/s3/teamtailor-production/gallery_picture-v1/image_uploads/eb99bb94-4e82-4a95-9472-0fa09d7fbc8a/original.jpeg"
         />
 
@@ -94,12 +211,12 @@ export const AboutUs = () => {
         sx={{
           "@media (max-width: 800px)": {
             flexDirection: "column",
-            height: "400px",
+            height: "25rem",
           },
         }}
         className="reveal"
         bgColor="white"
-        height="678px"
+        height="42.5rem"
         display="flex"
         flexDirection="row"
       >
@@ -107,7 +224,7 @@ export const AboutUs = () => {
           sx={{
             "@media (max-width: 876px)": {
               flexDirection: "column",
-              height: "400px",
+              height: "25rem",
             },
           }}
           display="flex"
@@ -137,7 +254,7 @@ export const AboutUs = () => {
             alt="a hand holding pills"
             width="40%"
             margin="4rem 0 0 2rem"
-            borderRadius="10px"
+            borderRadius="0.75rem"
             imgUrl="https://assets.website-files.com/61adf2412244af0f9852032f/61ba459c2c225e06179d6811_Why_We_Exist.jpg"
           />
         </Box>
@@ -166,7 +283,7 @@ export const AboutUs = () => {
           alt="doctor taking care of a baby"
           width="40%"
           margin="4rem 0 2rem 4rem"
-          borderRadius="10px"
+          borderRadius="0.75rem"
           imgUrl="https://assets.website-files.com/61adf2412244af0f9852032f/61ba3b5f1e93d88b8c87910c_About_Approach.jpg"
         />
 
@@ -174,15 +291,15 @@ export const AboutUs = () => {
           sx={{
             "@media (max-width: 876px)": {
               width: "100%",
-              height: "450px",
+              height: "28rem",
             },
             "@media (max-width: 450px)": {
               width: "100%",
-              height: "800px",
+              height: "50rem",
             },
           }}
           w="50%"
-          h="700px"
+          h="43.75rem"
           display="flex"
           alignContent="center"
           flexDirection="column"
@@ -200,7 +317,7 @@ export const AboutUs = () => {
           <Text
             color="black"
             fontFamily="Cormorant Garamond"
-            fontSize="40px"
+            fontSize="2.5rem"
             fontWeight="bold"
             padding="0 0 1rem 0"
           >
@@ -230,7 +347,7 @@ export const AboutUs = () => {
       <Box
         className="reveal"
         w="100%"
-        h="600px"
+        h="37.5rem"
         display="flex"
         alignItems="center"
         justifyContent="center"
@@ -238,12 +355,12 @@ export const AboutUs = () => {
         <Box
           sx={{
             "@media (max-width: 500px)": {
-              h: "540px",
+              h: "33.75rem",
               padding: "2rem",
             },
           }}
           w="75%"
-          h="450px"
+          h="28.125rem"
           padding="5rem"
           bgColor="blue.800"
           borderRadius="2xl"
@@ -253,14 +370,14 @@ export const AboutUs = () => {
         >
           <Img
             alt="heart"
-            w="80px"
-            h="80px"
+            w="5rem"
+            h="5rem"
             src="https://assets.website-files.com/61adf2412244af0f9852032f/61ba498e79d07b7c8a3818b2_Icon_About_Heart.svg"
           />
 
           <Text
             fontFamily="Cormorant Garamond"
-            fontSize="calc(25px + 0.390625vw)"
+            fontSize="calc(1.5rem + 0.390625vw)"
             color="white"
             lineHeight="normal"
             textAlign="center"
@@ -271,7 +388,7 @@ export const AboutUs = () => {
 
           <Text
             fontFamily="Public Sans"
-            fontSize="calc(15px + 0.390625vw)"
+            fontSize="calc(1rem + 0.390625vw)"
             color="white"
             textAlign="center"
             marginTop="1.5rem"
@@ -287,16 +404,16 @@ export const AboutUs = () => {
       <Box
         sx={{
           "@media (max-width: 900px)": {
-            h: "600px",
+            h: "37.5rem",
           },
           "@media (max-width: 400px)": {
-            h: "900px",
-            padding: "0 0 300px 0",
+            h: "56.25rem",
+            padding: "0 0 18.75rem 0",
           },
         }}
-        h="500px"
+        h="31.25rem"
         w="100%"
-        padding="0 0 120px 0"
+        padding="0 0 7.5rem 0"
         display="flex"
         flexDirection="column"
         alignItems="center"
@@ -305,16 +422,16 @@ export const AboutUs = () => {
         <Text
           sx={{
             "@media (max-width: 900px)": {
-              padding: "100px 0 120px 0",
+              padding: "6rem 0 7.5rem 0",
             },
             "@media (max-width: 500px)": {
-              padding: "50px 0 120px 0",
+              padding: "3rem 0 7.5rem 0",
             },
           }}
-          fontSize="40px"
+          fontSize="2.5rem"
           fontFamily="Cormorant Garamond"
           fontWeight="bold"
-          padding="150px 0 120px 0"
+          padding="9.3rem 0 7.5rem 0"
         >
           INVESTORS
         </Text>
@@ -330,54 +447,54 @@ export const AboutUs = () => {
           display="grid"
           gridTemplateColumns="repeat(3, 1fr)"
           w="80%"
-          h="180px"
-          gap="60px"
-          padding="0 0 220px 0"
+          h="11.25rem"
+          gap="3.75rem"
+          padding="0 0 13.75rem 0"
         >
           <Img
             margin="auto"
-            w="190px"
-            h="50px"
+            w="11.875rem"
+            h="3.125rem"
             alt="Felicis"
             src="https://assets.website-files.com/61adf2412244af0f9852032f/61d5ab02ce28f0016d2b4682_Felicis_Logo-p-500.png"
           />
 
           <Img
             margin="auto"
-            w="200px"
-            h="50px"
+            w="12.5rem"
+            h="3.125rem"
             alt="GreatPoint"
             src="https://assets.website-files.com/61adf2412244af0f9852032f/61d842a1dec49af59f216314_Greatpoint_Logo.svg"
           />
 
           <Img
             margin="auto"
-            w="100px"
-            h="40px"
+            w="6.25rem"
+            h="2.5rem"
             alt="GFC"
             src="https://assets.website-files.com/61adf2412244af0f9852032f/61ba34759a672323277234e1_GFC_Logo.svg"
           />
 
           <Img
             margin="auto"
-            w="190px"
-            h="50px"
+            w="12.5rem"
+            h="3.125rem"
             alt="MBX Capital"
             src="https://assets.website-files.com/61adf2412244af0f9852032f/61d841cc265d2d50460a9db8_MXB_Cap_Logo.svg"
           />
 
           <Img
             margin="auto"
-            w="240px"
-            h="30px"
+            w="15rem"
+            h="1.875rem"
             alt="Tribe Capital"
             src="https://assets.website-files.com/61adf2412244af0f9852032f/61d5b21dbc9e1a71ec60ebfd_Tribe-capital_Logo-p-500.png"
           />
 
           <Img
             margin="auto"
-            w="160px"
-            h="50px"
+            w="10rem"
+            h="3.125rem"
             alt="Stanford University"
             src="https://assets.website-files.com/61adf2412244af0f9852032f/61ba32be204f516c41eb83de_Stanford_Logo.svg"
           />
@@ -388,14 +505,14 @@ export const AboutUs = () => {
         sx={{
           "@media (max-width: 760px)": {
             flexDirection: "column",
-            height: "900px",
+            height: "56.25rem",
           },
           "@media (max-width: 635px)": {
             flexDirection: "column",
-            height: "1400px",
+            height: "87.5rem",
           },
         }}
-        h="620px"
+        h="38.75rem"
         w="100%"
         bgColor="green.800"
         display="flex"
@@ -405,28 +522,28 @@ export const AboutUs = () => {
           sx={{
             "@media (max-width: 760px)": {
               order: "2",
-              padding: "0 0 0 60px",
+              padding: "0 0 0 3.75rem",
             },
             "@media (max-width: 635px)": {
               order: "2",
-              padding: "120px 0 0 60px",
+              padding: "7.5rem 0 0 3.75rem",
             },
           }}
-          height="200px"
-          w="400px"
+          height="12.5rem"
+          w="25rem"
           display="flex"
           flexDirection="column"
-          padding="80px 0 0 60px"
+          padding="5rem 0 0 3.75rem"
           color="white"
-          gap="15px"
+          gap="1rem"
         >
           <Link
             to="/"
             style={{
-              width: "150px",
+              width: "10rem",
               fontWeight: "bold",
               fontFamily: "Raleway",
-              fontSize: "calc(45px + 0.390625vw)",
+              fontSize: "calc(2.75rem + 0.390625vw)",
             }}
           >
             VITIM
@@ -434,19 +551,19 @@ export const AboutUs = () => {
 
           <Text
             fontFamily="Raleway"
-            fontSize="calc(17px + 0.390625vw)"
+            fontSize="calc(1rem + 0.390625vw)"
             fontWeight="bold"
           >
             Follow us
           </Text>
 
-          <Box w="40px" h="40px">
+          <Box w="2.5rem" h="2.5rem">
             <a href="https://www.linkedin.com/in/dev-victor-nascimento/">
               <Img src="https://assets.website-files.com/61adf2412244af0f9852032f/61b9f96f6bd2246f6f57aba6_LinkedIn_Logo-p-500.png" />
             </a>
           </Box>
 
-          <Box marginTop="10px">
+          <Box marginTop="0.625rem">
             <Text fontWeight="bold" fontFamily="Raleway">
               ©2022 Atlas Labs, Inc.
             </Text>
@@ -460,205 +577,113 @@ export const AboutUs = () => {
           sx={{
             "@media (max-width: 760px)": {
               order: "1",
-              marginLeft: "60px",
-              height: "600px",
-              width: "300px",
+              marginLeft: "3.75rem",
+              height: "37.5rem",
+              width: "18.75rem",
             },
             "@media (max-width: 635px)": {
               order: "1",
-              marginLeft: "60px",
-              height: "1000px",
+              marginLeft: "3.75rem",
+              height: "62.5rem",
               display: "flex",
               flexDirection: "column",
-              gap: "25px",
-              widht: "260px",
+              gap: "1.5rem",
+              widht: "16.25rem",
             },
           }}
-          paddingTop="80px"
-          marginLeft="100px"
+          paddingTop="5rem"
+          marginLeft="6rem"
           h="100%"
+          w="100%"
           display="grid"
           gridTemplateColumns="repeat(3, 1fr)"
         >
-          <Box display="flex" flexDirection="column" gap="15px">
-            <Link
-              to="/"
-              style={{
-                color: "white",
-                fontFamily: "Raleway",
-                fontSize: "calc(17px + 0.390625vw)",
-                fontWeight: "bold",
-              }}
-            >
-              Home
-            </Link>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-              fontWeight="bold"
-            >
-              Solution
-            </Text>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-              fontWeight="bold"
-            >
-              Impact
-            </Text>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-              fontWeight="bold"
-            >
-              Resources
-            </Text>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-            >
-              KLS Reports
-            </Text>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-            >
-              Case Studies
-            </Text>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-            >
-              Patient Stories
-            </Text>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-            >
-              Blog
-            </Text>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-            >
-              White Papers
-            </Text>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-            >
-              Webinars
-            </Text>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-            >
-              Events
-            </Text>
+          <Box display="flex" flexDirection="column" gap="1rem">
+            {navOptions.map((navOption) => {
+              return (
+                <Link
+                  key={navOption.id}
+                  to={navOption.url}
+                  style={{
+                    color: "white",
+                    fontFamily: "Raleway",
+                    fontSize: "calc(1rem + 0.390625vw)",
+                    fontWeight: "bold",
+                  }}
+                >
+                  {navOption.name}
+                </Link>
+              );
+            })}
+            {firstSubNavOptions.map((navOption) => {
+              return (
+                <Link
+                  key={navOption.id}
+                  to={navOption.url}
+                  style={{
+                    color: "white",
+                    fontFamily: "Raleway",
+                    fontSize: "calc(1rem + 0.390625vw)",
+                  }}
+                >
+                  {navOption.name}
+                </Link>
+              );
+            })}
           </Box>
-          <Box display="flex" flexDirection="column" gap="15px">
+          <Box display="flex" flexDirection="column" gap="1rem">
             <Link
               to="/about-us"
               style={{
                 color: "white",
                 fontFamily: "Raleway",
-                fontSize: "calc(17px + 0.390625vw)",
+                fontSize: "calc(1rem + 0.390625vw)",
                 fontWeight: "bold",
               }}
             >
               Company
             </Link>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-            >
-              About Us
-            </Text>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-            >
-              Leadership Team
-            </Text>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-            >
-              Careers
-            </Text>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-            >
-              Security
-            </Text>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-            >
-              Press
-            </Text>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-            >
-              News
-            </Text>
+            {secondSubNavOptions.map((navOption) => {
+              return (
+                <Link
+                  key={navOption.id}
+                  to={navOption.url}
+                  style={{
+                    color: "white",
+                    fontFamily: "Raleway",
+                    fontSize: "calc(1rem + 0.390625vw)",
+                  }}
+                >
+                  {navOption.name}
+                </Link>
+              );
+            })}
           </Box>
 
-          <Box display="flex" flexDirection="column" gap="15px">
+          <Box display="flex" flexDirection="column" gap="1rem">
             <Text
               color="white"
               fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
+              fontSize="calc(1rem + 0.390625vw)"
               fontWeight="bold"
             >
               Contact
             </Text>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-            >
-              Contact Us
-            </Text>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-            >
-              ROI Assessment
-            </Text>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-            >
-              Demo
-            </Text>
-            <Text
-              color="white"
-              fontFamily="Raleway"
-              fontSize="calc(17px + 0.390625vw)"
-            >
-              Privacy
-            </Text>
+            {thirdSubNavOptions.map((navOption) => {
+              return (
+                <Link
+                  key={navOption.id}
+                  to={navOption.url}
+                  style={{
+                    color: "white",
+                    fontFamily: "Raleway",
+                    fontSize: "calc(1rem + 0.390625vw)",
+                  }}
+                >
+                  {navOption.name}
+                </Link>
+              );
+            })}
           </Box>
         </Box>
       </Box>

@@ -1,12 +1,30 @@
 import { Box, Text } from "@chakra-ui/react";
 
 export const Numbers = () => {
+  const numbersInfo = [
+    {
+      id: "1",
+      number: "+25K",
+      description: "written lines of modern and advanced code",
+    },
+    {
+      id: "2",
+      number: "+20",
+      description: "websites and mobile applications revigorated",
+    },
+    {
+      id: "3",
+      number: "456",
+      description: "days of learning and personal improvement",
+    },
+  ];
+
   return (
     <Box
       sx={{
         "@media (max-width: 550px)": {
           flexDirection: "column",
-          height: "500px",
+          height: "31.25rem",
         },
       }}
       className="reveal"
@@ -15,60 +33,31 @@ export const Numbers = () => {
       flexDirection="row"
       justifyContent="space-evenly"
       width="100%"
-      height="300px"
+      height="18.75rem"
       bgColor="green.400"
     >
-      <Box
-        display="flex"
-        flexDirection="column"
-        alignItems="center"
-        width="250px"
-      >
-        <Text fontFamily="Raleway" fontSize="calc(68px + 0.390625vw)">
-          +25K
-        </Text>
-        <Text
-          fontFamily="Public Sans"
-          fontSize="calc(17px + 0.390625vw)"
-          marginLeft="2rem"
-        >
-          written lines of modern and advanced code
-        </Text>
-      </Box>
-      <Box
-        display="flex"
-        flexDirection="column"
-        alignItems="center"
-        width="250px"
-      >
-        <Text fontFamily="Raleway" fontSize="calc(68px + 0.390625vw)">
-          +20
-        </Text>
-        <Text
-          fontFamily="Public Sans"
-          fontSize="calc(17px + 0.390625vw)"
-          marginLeft="1.6rem"
-        >
-          websites and mobile applications revigorated
-        </Text>
-      </Box>
-      <Box
-        display="flex"
-        flexDirection="column"
-        alignItems="center"
-        width="250px"
-      >
-        <Text fontFamily="Raleway" fontSize="calc(68px + 0.390625vw)">
-          456
-        </Text>
-        <Text
-          fontFamily="Public Sans"
-          fontSize="calc(17px + 0.390625vw)"
-          marginLeft="2rem"
-        >
-          days of learning and personal improvement
-        </Text>
-      </Box>
+      {numbersInfo.map((numberInfo) => {
+        return (
+          <Box
+            key={numberInfo.id}
+            display="flex"
+            flexDirection="column"
+            alignItems="center"
+            width="15.5rem"
+          >
+            <Text fontFamily="Raleway" fontSize="calc(4.25rem + 0.390625vw)">
+              {numberInfo.number}
+            </Text>
+            <Text
+              fontFamily="Public Sans"
+              fontSize="calc(1rem + 0.390625vw)"
+              marginLeft="2rem"
+            >
+              {numberInfo.description}
+            </Text>
+          </Box>
+        );
+      })}
     </Box>
   );
 };

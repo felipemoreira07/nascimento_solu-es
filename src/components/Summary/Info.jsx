@@ -13,7 +13,7 @@ export const Info = ({
     <Box
       sx={sx}
       w="50%"
-      h="600px"
+      h="37.5rem"
       display="flex"
       alignContent="center"
       flexDirection="column"
@@ -24,7 +24,7 @@ export const Info = ({
           color={color}
           fontFamily="Raleway"
           fontWeight="bold"
-          fontSize="calc(12px + 0.390625vw)"
+          fontSize="calc(0.75rem + 0.390625vw)"
           padding="0 0 1rem 0"
         >
           {logo}
@@ -33,7 +33,7 @@ export const Info = ({
       <Text
         color={color}
         fontFamily="Cormorant Garamond"
-        fontSize="calc(37px + 0.390625vw)"
+        fontSize="calc(2.25rem + 0.390625vw)"
         fontWeight="bold"
         padding="0 0 1rem 0"
       >
@@ -42,7 +42,7 @@ export const Info = ({
       <Text
         color={color}
         fontFamily="Public Sans"
-        fontSize="calc(17px + 0.390625vw)"
+        fontSize="calc(1rem + 0.390625vw)"
         padding="0 0 1rem 0"
       >
         {text}
@@ -56,12 +56,12 @@ export const Info = ({
           color="white"
           fontFamily="Raleway"
           fontWeight="bold"
-          fontSize="calc(12px + 0.390625vw)"
+          fontSize="calc(0.75rem + 0.390625vw)"
           _hover={{
             bg: "green.400",
           }}
-          marginTop="20px"
-          borderRadius="10px"
+          marginTop="1.25rem"
+          borderRadius="0.7rem"
         >
           Get VITIM Assistance
         </Box>

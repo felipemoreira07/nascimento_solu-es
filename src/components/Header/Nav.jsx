@@ -1,5 +1,4 @@
 import {
-  Text,
   Box,
   Button,
   Drawer,
@@ -16,6 +15,33 @@ import { Link } from "react-router-dom";
 
 export const Nav = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const navOptions = [
+    {
+      id: "1",
+      name: "Solution",
+      url: "/",
+    },
+    {
+      id: "2",
+      name: "Impact",
+      url: "/",
+    },
+    {
+      id: "3",
+      name: "Resources",
+      url: "/",
+    },
+    {
+      id: "4",
+      name: "Company",
+      url: "/about-us",
+    },
+    {
+      id: "5",
+      name: "Contact",
+      url: "/",
+    },
+  ];
 
   return (
     <>
@@ -42,60 +68,23 @@ export const Nav = () => {
             <DrawerCloseButton color="white" size="lg" />
             <DrawerBody bgColor="blue.800">
               <Box display="flex" flexDirection="column">
-                <Text
-                  fontFamily="Raleway"
-                  fontWeight="semibold"
-                  fontSize="25px"
-                  cursor="pointer"
-                  color="white"
-                  padding="2rem"
-                >
-                  Solution
-                </Text>
-                <Text
-                  fontFamily="Raleway"
-                  fontWeight="semibold"
-                  fontSize="25px"
-                  cursor="pointer"
-                  color="white"
-                  padding="2rem"
-                >
-                  Impact
-                </Text>
-                <Text
-                  fontFamily="Raleway"
-                  fontWeight="semibold"
-                  fontSize="25px"
-                  cursor="pointer"
-                  color="white"
-                  padding="2rem"
-                >
-                  Resources
-                </Text>
-
-                <Link
-                  to="/about-us"
-                  style={{
-                    fontWeight: "bold",
-                    fontFamily: "Raleway",
-                    fontSize: "25px",
-                    color: "white",
-                    padding: "2rem",
-                  }}
-                >
-                  Company
-                </Link>
-
-                <Text
-                  fontWeight="semibold"
-                  fontFamily="Raleway"
-                  fontSize="25px"
-                  cursor="pointer"
-                  color="white"
-                  padding="2rem"
-                >
-                  Contact
-                </Text>
+                {navOptions.map((option) => {
+                  return (
+                    <Link
+                      key={option.id}
+                      to={option.url}
+                      style={{
+                        fontWeight: "bold",
+                        fontFamily: "Raleway",
+                        fontSize: "1.5rem",
+                        color: "white",
+                        padding: "2rem",
+                      }}
+                    >
+                      {option.name}
+                    </Link>
+                  );
+                })}
               </Box>
             </DrawerBody>
           </DrawerContent>
@@ -109,52 +98,23 @@ export const Nav = () => {
           },
         }}
         display="flex"
+        pr="2rem"
       >
-        <Text
-          fontFamily="Raleway"
-          fontWeight="semibold"
-          ml="40px"
-          cursor="pointer"
-        >
-          Solution
-        </Text>
-        <Text
-          fontFamily="Raleway"
-          fontWeight="semibold"
-          ml="40px"
-          cursor="pointer"
-        >
-          Impact
-        </Text>
-        <Text
-          fontFamily="Raleway"
-          fontWeight="semibold"
-          ml="40px"
-          cursor="pointer"
-        >
-          Resources
-        </Text>
-
-        <Link
-          to="/about-us"
-          style={{
-            fontWeight: "bold",
-            fontFamily: "Raleway",
-            marginLeft: "40px",
-          }}
-        >
-          Company
-        </Link>
-
-        <Text
-          fontWeight="semibold"
-          fontFamily="Raleway"
-          ml="40px"
-          mr="30px"
-          cursor="pointer"
-        >
-          Contact
-        </Text>
+        {navOptions.map((option) => {
+          return (
+            <Link
+              key={option.id}
+              to={option.url}
+              style={{
+                fontWeight: "bold",
+                fontFamily: "Raleway",
+                marginLeft: "2.5rem",
+              }}
+            >
+              {option.name}
+            </Link>
+          );
+        })}
       </Box>
     </>
   );
