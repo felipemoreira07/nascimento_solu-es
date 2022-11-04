@@ -16,6 +16,7 @@ export const Summary = () => {
       <Box
         display="flex"
         flexDirection="row"
+        paddingBottom="3rem"
         sx={{
           "@media (max-width: 800px)": {
             flexDirection: "column",
@@ -26,13 +27,9 @@ export const Summary = () => {
           sx={{
             "@media (max-width: 800px)": {
               width: "100%",
-              height: "31.25rem",
-              padding: "3rem 4rem 0 4rem",
             },
             "@media (max-width: 460px)": {
               width: "100%",
-              height: "38.75rem",
-              padding: "3rem 4rem 0rem 4rem",
             },
           }}
           color="black"

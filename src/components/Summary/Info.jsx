@@ -13,7 +13,7 @@ export const Info = ({
     <Box
       sx={sx}
       w="50%"
-      h="37.5rem"
+      h="100%"
       display="flex"
       alignContent="center"
       flexDirection="column"
@@ -24,7 +24,7 @@ export const Info = ({
           color={color}
           fontFamily="Raleway"
           fontWeight="bold"
-          fontSize="calc(0.75rem + 0.390625vw)"
+          fontSize="xl"
           padding="0 0 1rem 0"
         >
           {logo}
@@ -42,13 +42,18 @@ export const Info = ({
       <Text
         color={color}
         fontFamily="Public Sans"
-        fontSize="calc(1rem + 0.390625vw)"
+        fontSize="xl"
         padding="0 0 1rem 0"
       >
         {text}
       </Text>
       {showButton && (
         <Box
+          sx={{
+            "@media (max-width: 500px)": {
+              width: "100%",
+            },
+          }}
           as="button"
           width="50%"
           height="4rem"
@@ -56,7 +61,7 @@ export const Info = ({
           color="white"
           fontFamily="Raleway"
           fontWeight="bold"
-          fontSize="calc(0.75rem + 0.390625vw)"
+          fontSize="xl"
           _hover={{
             bg: "green.400",
           }}

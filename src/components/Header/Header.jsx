@@ -23,7 +23,7 @@ export const Header = () => {
           fontWeight: "bold",
           fontFamily: "Raleway",
           marginLeft: "4rem",
-          fontSize: "calc(1rem + 0.390625vw)",
+          fontSize: "xl",
         }}
       >
         VITIM

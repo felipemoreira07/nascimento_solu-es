@@ -171,19 +171,18 @@ export const AboutUs = () => {
         sx={{
           "@media (max-width: 800px)": {
             flexDirection: "column",
-            height: "46.25rem",
           },
         }}
         display="flex"
         flexDirection="row"
         bgColor="white"
-        height="31.25rem"
       >
         <Photo
           sx={{
             "@media (max-width: 800px)": {
-              width: "80%",
-              marginLeft: "0.8rem",
+              width: "100%",
+              margin: "0",
+              borderRadius: "0",
             },
           }}
           alt="man programming"
@@ -197,7 +196,7 @@ export const AboutUs = () => {
           sx={{
             "@media (max-width: 800px)": {
               width: "100%",
-              padding: "2rem 4rem 0 4rem",
+              padding: "2rem 4rem 2rem 4rem",
             },
           }}
           color="black"
@@ -211,12 +210,9 @@ export const AboutUs = () => {
         sx={{
           "@media (max-width: 800px)": {
             flexDirection: "column",
-            height: "25rem",
           },
         }}
-        className="reveal"
         bgColor="white"
-        height="42.5rem"
         display="flex"
         flexDirection="row"
       >
@@ -224,17 +220,17 @@ export const AboutUs = () => {
           sx={{
             "@media (max-width: 876px)": {
               flexDirection: "column",
-              height: "25rem",
             },
           }}
           display="flex"
           flexDirection="row"
+          className="reveal"
         >
           <Info
             sx={{
               "@media (max-width: 876px)": {
                 width: "100%",
-                padding: "0 4rem 2rem 4rem",
+                padding: "2rem 4rem 2rem 4rem",
               },
             }}
             color="black"
@@ -247,13 +243,15 @@ export const AboutUs = () => {
           <Photo
             sx={{
               "@media (max-width: 876px)": {
-                width: "50%",
-                padding: "10rem 0 2rem 2rem ",
+                width: "100%",
+                margin: "0",
+                borderRadius: "0",
               },
             }}
+            className="reveal"
+            margin="3rem 0 0 3rem"
             alt="a hand holding pills"
             width="40%"
-            margin="4rem 0 0 2rem"
             borderRadius="0.75rem"
             imgUrl="https://assets.website-files.com/61adf2412244af0f9852032f/61ba459c2c225e06179d6811_Why_We_Exist.jpg"
           />
@@ -265,10 +263,10 @@ export const AboutUs = () => {
           "@media (max-width: 876px)": {
             flexDirection: "column",
             gap: "0",
+            padding: "0",
           },
         }}
-        className="reveal"
-        paddingTop="6rem"
+        padding="6rem 0"
         display="flex"
         flexDirection="row"
         gap="6rem"
@@ -276,13 +274,15 @@ export const AboutUs = () => {
         <Photo
           sx={{
             "@media (max-width: 876px)": {
-              width: "70%",
-              padding: "30rem 0 2rem 6rem ",
+              width: "100%",
+              borderRadius: "0",
+              margin: "0",
             },
           }}
+          className="reveal"
+          margin="0 0 0 4rem"
           alt="doctor taking care of a baby"
           width="40%"
-          margin="4rem 0 2rem 4rem"
           borderRadius="0.75rem"
           imgUrl="https://assets.website-files.com/61adf2412244af0f9852032f/61ba3b5f1e93d88b8c87910c_About_Approach.jpg"
         />
@@ -291,19 +291,14 @@ export const AboutUs = () => {
           sx={{
             "@media (max-width: 876px)": {
               width: "100%",
-              height: "28rem",
-            },
-            "@media (max-width: 450px)": {
-              width: "100%",
-              height: "50rem",
             },
           }}
           w="50%"
-          h="43.75rem"
           display="flex"
           alignContent="center"
           flexDirection="column"
           padding="4rem"
+          className="reveal"
         >
           <Text
             color="black"
@@ -333,12 +328,7 @@ export const AboutUs = () => {
             {leftInfo3.description}
           </Text>
 
-          <Text
-            color="black"
-            fontFamily="Public Sans"
-            fontSize="xl"
-            padding="0 0 1rem 0"
-          >
+          <Text color="black" fontFamily="Public Sans" fontSize="xl">
             {leftInfo3.text}
           </Text>
         </Box>
@@ -347,7 +337,7 @@ export const AboutUs = () => {
       <Box
         className="reveal"
         w="100%"
-        h="37.5rem"
+        paddingBottom="4rem"
         display="flex"
         alignItems="center"
         justifyContent="center"
@@ -355,12 +345,10 @@ export const AboutUs = () => {
         <Box
           sx={{
             "@media (max-width: 500px)": {
-              h: "33.75rem",
               padding: "2rem",
             },
           }}
           w="75%"
-          h="28.125rem"
           padding="5rem"
           bgColor="blue.800"
           borderRadius="2xl"
@@ -403,15 +391,10 @@ export const AboutUs = () => {
 
       <Box
         sx={{
-          "@media (max-width: 900px)": {
-            h: "37.5rem",
-          },
           "@media (max-width: 400px)": {
-            h: "56.25rem",
-            padding: "0 0 18.75rem 0",
+            padding: "0 0 4rem 0",
           },
         }}
-        h="31.25rem"
         w="100%"
         padding="0 0 7.5rem 0"
         display="flex"
@@ -420,18 +403,11 @@ export const AboutUs = () => {
         justifyContent="center"
       >
         <Text
-          sx={{
-            "@media (max-width: 900px)": {
-              padding: "6rem 0 7.5rem 0",
-            },
-            "@media (max-width: 500px)": {
-              padding: "3rem 0 7.5rem 0",
-            },
-          }}
+          className="reveal"
+          padding="0 0 4rem 0"
           fontSize="2.5rem"
           fontFamily="Cormorant Garamond"
           fontWeight="bold"
-          padding="9.3rem 0 7.5rem 0"
         >
           INVESTORS
         </Text>
@@ -447,11 +423,10 @@ export const AboutUs = () => {
           display="grid"
           gridTemplateColumns="repeat(3, 1fr)"
           w="80%"
-          h="11.25rem"
           gap="3.75rem"
-          padding="0 0 13.75rem 0"
         >
           <Img
+            className="reveal"
             margin="auto"
             w="11.875rem"
             h="3.125rem"
@@ -460,6 +435,7 @@ export const AboutUs = () => {
           />
 
           <Img
+            className="reveal"
             margin="auto"
             w="12.5rem"
             h="3.125rem"
@@ -468,6 +444,7 @@ export const AboutUs = () => {
           />
 
           <Img
+            className="reveal"
             margin="auto"
             w="6.25rem"
             h="2.5rem"
@@ -476,6 +453,7 @@ export const AboutUs = () => {
           />
 
           <Img
+            className="reveal"
             margin="auto"
             w="12.5rem"
             h="3.125rem"
@@ -484,6 +462,7 @@ export const AboutUs = () => {
           />
 
           <Img
+            className="reveal"
             margin="auto"
             w="15rem"
             h="1.875rem"
@@ -492,6 +471,7 @@ export const AboutUs = () => {
           />
 
           <Img
+            className="reveal"
             margin="auto"
             w="10rem"
             h="3.125rem"
@@ -505,11 +485,7 @@ export const AboutUs = () => {
         sx={{
           "@media (max-width: 760px)": {
             flexDirection: "column",
-            height: "56.25rem",
-          },
-          "@media (max-width: 635px)": {
-            flexDirection: "column",
-            height: "87.5rem",
+            height: "100%",
           },
         }}
         h="38.75rem"
@@ -526,10 +502,11 @@ export const AboutUs = () => {
             },
             "@media (max-width: 635px)": {
               order: "2",
-              padding: "7.5rem 0 0 3.75rem",
+              padding: "3rem 0 3rem 3.75rem",
+              width: "15.625rem",
             },
           }}
-          height="12.5rem"
+          height="100%"
           w="25rem"
           display="flex"
           flexDirection="column"
@@ -543,17 +520,13 @@ export const AboutUs = () => {
               width: "10rem",
               fontWeight: "bold",
               fontFamily: "Raleway",
-              fontSize: "calc(2.75rem + 0.390625vw)",
+              fontSize: "1.25rem",
             }}
           >
             VITIM
           </Link>
 
-          <Text
-            fontFamily="Raleway"
-            fontSize="calc(1rem + 0.390625vw)"
-            fontWeight="bold"
-          >
+          <Text fontFamily="Raleway" fontSize="xl" fontWeight="bold">
             Follow us
           </Text>
 
@@ -563,7 +536,7 @@ export const AboutUs = () => {
             </a>
           </Box>
 
-          <Box marginTop="0.625rem">
+          <Box marginTop="0.75rem">
             <Text fontWeight="bold" fontFamily="Raleway">
               ©2022 Atlas Labs, Inc.
             </Text>
@@ -578,13 +551,13 @@ export const AboutUs = () => {
             "@media (max-width: 760px)": {
               order: "1",
               marginLeft: "3.75rem",
-              height: "37.5rem",
+              height: "100%",
               width: "18.75rem",
             },
             "@media (max-width: 635px)": {
               order: "1",
               marginLeft: "3.75rem",
-              height: "62.5rem",
+              height: "100%",
               display: "flex",
               flexDirection: "column",
               gap: "1.5rem",
@@ -607,7 +580,7 @@ export const AboutUs = () => {
                   style={{
                     color: "white",
                     fontFamily: "Raleway",
-                    fontSize: "calc(1rem + 0.390625vw)",
+                    fontSize: "1.25rem",
                     fontWeight: "bold",
                   }}
                 >
@@ -623,7 +596,7 @@ export const AboutUs = () => {
                   style={{
                     color: "white",
                     fontFamily: "Raleway",
-                    fontSize: "calc(1rem + 0.390625vw)",
+                    fontSize: "1.25rem",
                   }}
                 >
                   {navOption.name}
@@ -637,7 +610,7 @@ export const AboutUs = () => {
               style={{
                 color: "white",
                 fontFamily: "Raleway",
-                fontSize: "calc(1rem + 0.390625vw)",
+                fontSize: "1.25rem",
                 fontWeight: "bold",
               }}
             >
@@ -651,7 +624,7 @@ export const AboutUs = () => {
                   style={{
                     color: "white",
                     fontFamily: "Raleway",
-                    fontSize: "calc(1rem + 0.390625vw)",
+                    fontSize: "1.25rem",
                   }}
                 >
                   {navOption.name}
@@ -664,7 +637,7 @@ export const AboutUs = () => {
             <Text
               color="white"
               fontFamily="Raleway"
-              fontSize="calc(1rem + 0.390625vw)"
+              fontSize="xl"
               fontWeight="bold"
             >
               Contact
@@ -677,7 +650,7 @@ export const AboutUs = () => {
                   style={{
                     color: "white",
                     fontFamily: "Raleway",
-                    fontSize: "calc(1rem + 0.390625vw)",
+                    fontSize: "1.25rem",
                   }}
                 >
                   {navOption.name}

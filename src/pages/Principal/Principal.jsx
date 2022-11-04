@@ -153,11 +153,7 @@ export const Principal = () => {
         sx={{
           "@media (max-width: 760px)": {
             flexDirection: "column",
-            height: "56.25rem",
-          },
-          "@media (max-width: 635px)": {
-            flexDirection: "column",
-            height: "87.5rem",
+            height: "100%",
           },
         }}
         h="38.75rem"
@@ -174,11 +170,11 @@ export const Principal = () => {
             },
             "@media (max-width: 635px)": {
               order: "2",
-              padding: "7.5rem 0 0 3.75rem",
+              padding: "3rem 0 3rem 3.75rem",
               width: "15.625rem",
             },
           }}
-          height="12.5rem"
+          height="100%"
           w="25rem"
           display="flex"
           flexDirection="column"
@@ -192,17 +188,13 @@ export const Principal = () => {
               width: "10rem",
               fontWeight: "bold",
               fontFamily: "Raleway",
-              fontSize: "calc(2.75rem + 0.390625vw)",
+              fontSize: "1.25rem",
             }}
           >
             VITIM
           </Link>
 
-          <Text
-            fontFamily="Raleway"
-            fontSize="calc(1rem + 0.390625vw)"
-            fontWeight="bold"
-          >
+          <Text fontFamily="Raleway" fontSize="xl" fontWeight="bold">
             Follow us
           </Text>
 
@@ -227,13 +219,13 @@ export const Principal = () => {
             "@media (max-width: 760px)": {
               order: "1",
               marginLeft: "3.75rem",
-              height: "37.5rem",
+              height: "100%",
               width: "18.75rem",
             },
             "@media (max-width: 635px)": {
               order: "1",
               marginLeft: "3.75rem",
-              height: "62.5rem",
+              height: "100%",
               display: "flex",
               flexDirection: "column",
               gap: "1.5rem",
@@ -256,7 +248,7 @@ export const Principal = () => {
                   style={{
                     color: "white",
                     fontFamily: "Raleway",
-                    fontSize: "calc(1rem + 0.390625vw)",
+                    fontSize: "1.25rem",
                     fontWeight: "bold",
                   }}
                 >
@@ -272,7 +264,7 @@ export const Principal = () => {
                   style={{
                     color: "white",
                     fontFamily: "Raleway",
-                    fontSize: "calc(1rem + 0.390625vw)",
+                    fontSize: "1.25rem",
                   }}
                 >
                   {navOption.name}
@@ -286,7 +278,7 @@ export const Principal = () => {
               style={{
                 color: "white",
                 fontFamily: "Raleway",
-                fontSize: "calc(1rem + 0.390625vw)",
+                fontSize: "1.25rem",
                 fontWeight: "bold",
               }}
             >
@@ -300,7 +292,7 @@ export const Principal = () => {
                   style={{
                     color: "white",
                     fontFamily: "Raleway",
-                    fontSize: "calc(1rem + 0.390625vw)",
+                    fontSize: "1.25rem",
                   }}
                 >
                   {navOption.name}
@@ -313,7 +305,7 @@ export const Principal = () => {
             <Text
               color="white"
               fontFamily="Raleway"
-              fontSize="calc(1rem + 0.390625vw)"
+              fontSize="xl"
               fontWeight="bold"
             >
               Contact
@@ -326,7 +318,7 @@ export const Principal = () => {
                   style={{
                     color: "white",
                     fontFamily: "Raleway",
-                    fontSize: "calc(1rem + 0.390625vw)",
+                    fontSize: "1.25rem",
                   }}
                 >
                   {navOption.name}

@@ -24,7 +24,7 @@ export const Numbers = () => {
       sx={{
         "@media (max-width: 550px)": {
           flexDirection: "column",
-          height: "31.25rem",
+          height: "100%",
         },
       }}
       className="reveal"
@@ -44,15 +44,12 @@ export const Numbers = () => {
             flexDirection="column"
             alignItems="center"
             width="15.5rem"
+            padding="2rem"
           >
-            <Text fontFamily="Raleway" fontSize="calc(4.25rem + 0.390625vw)">
+            <Text fontFamily="Raleway" fontSize="7xl">
               {numberInfo.number}
             </Text>
-            <Text
-              fontFamily="Public Sans"
-              fontSize="calc(1rem + 0.390625vw)"
-              marginLeft="2rem"
-            >
+            <Text fontFamily="Public Sans" fontSize="xl" marginLeft="2rem">
               {numberInfo.description}
             </Text>
           </Box>
